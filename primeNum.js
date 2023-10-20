@@ -1,11 +1,18 @@
-function primeNumber() {
+function primeNumber(Pnumber) {
   let count = 0;
 
-  console.log("primeNumber");
+  for (let i = 2; i < Pnumber; i++) {
+    if (Pnumber % i === 0 && i !== Pnumber) {
+      count++;
+    }
+  }
 
-  count++;
+  let check =
+    count === 0 ? Pnumber + ": Prime Number" : Pnumber + ": Not a Prime Number";
 
-  //dummy & wrong code for Prime Number
+  console.log(check);
 }
 
-primeNumber();
+primeNumber(3);
+
+primeNumber(10);
