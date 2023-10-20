@@ -1,11 +1,15 @@
-function primeNumber() {
+function primeNumber(num) {
   let count = 0;
-
-  console.log("primeNumber");
-
-  count++;
-
-  //dummy & wrong code for Prime Number
+  for(let i=1; i<=num; i++){
+    if(num % i === 0){
+      count++;
+    }
+  }
+  if(count === 2){
+    console.log(num, "is a Prime Number.")
+  }else{
+    console.log(num, "is not a Prime Number.")
+  }
 }
 
-primeNumber();
+primeNumber(7);
