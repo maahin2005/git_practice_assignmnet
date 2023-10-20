@@ -14,5 +14,5 @@ function primeNumber(Pnumber) {
 }
 
 primeNumber(3);
-
+primeNumber(7);
 primeNumber(10);
